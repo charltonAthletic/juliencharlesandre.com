@@ -1,106 +1,198 @@
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body,
+body {
+  font-family: "Pacifico", cursive;
+}
+
 html {
-  height: 100%;
+  width: auto;
+}
+
+.hero-image {
+  vertical-align: top;
+  position: fixed;
+  text-align: center;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 400px;
+  margin-top: -250px; /* Half the height */
+  margin-left: -500px; /* Half the width */
+  float: left;
+}
+
+.caption {
+  display: block;
 }
 
 @media only screen and (max-width: 400px) {
-    body {
-      height: 20%;
-      margin-top: 50%;
-    }
+  img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 460px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -230px;
   }
-
+}
 
 @media only screen and (min-width: 400px) {
-    body {
-      height: 25%;
-      margin-top: 50%;
-    }
+  img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -250px;
   }
+}
 
 @media only screen and (min-width: 600px) {
-  body {
-    height: 35%;
-    margin-top: 50%;
+  img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -250px;
   }
 }
 
 @media only screen and (min-width: 650px) {
-  body {
-    height: 35%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  body {
-    height: 35%;
-  }
-}
-
-@media only screen and (min-width: 750px) {
-  body {
-    height: 35%;
+  img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 200px;
+    margin-top: -100px;
+    margin-left: -250px;
   }
 }
 
 @media only screen and (min-width: 850px) {
-    body {
-      height: 40%;
-    }
+  img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 760px;
+    height: 400px;
+    margin-top: -200px; /* Half the height */
+    margin-left: -380px; /* Half the width */
   }
-
-
-.bgimg {
-  /* Background image */
-  background-image: url("img3.jpg");
-  /* Full-screen */
-  height: 100%;
-  width: auto;
-  /* Center the background image */
-  background-position: center;
-  /* Scale and zoom in the image */
-  background-size: cover;
-  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-  position: relative;
-  /* Add a white text color to all elements inside the .bgimg container */
-  color: black;
-  /* Add a font */
-  font-family: "Courier New", Courier, monospace;
-  /* Set the font-size to 25 pixels */
-  font-size: 25px;
 }
 
-/* Position text in the top-left corner */
-.topleft {
+@media only screen and (min-width: 950px) {
+  img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 940px;
+    height: 400px;
+    margin-top: -200px; /* Half the height */
+    margin-left: -470px; /* Half the width */
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 400px;
+    margin-top: -200px; /* Half the height */
+    margin-left: -500px; /* Half the width */
+  }
+}
+
+@media only screen and (max-width: 4000px) {
+  .hero-image img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1000px;
+    height: 400px;
+    margin-top: -200px; /* Half the height */
+    margin-left: -500px; /* Half the width */
+  }
+}
+
+.navbar {
+  background-color: #fff;
+  overflow: hidden;
+  height: 100px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar ul {
+  margin: 8px 0 0 0;
+  list-style: none;
+}
+
+.navbar a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #fff;
+}
+
+.side-nav .btn-close {
   position: absolute;
   top: 0;
-  left: 16px;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-/* Position text in the bottom-left corner */
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
+@media (max-width: 568px) {
+  .navbar-nav {
+    display: none;
+  }
 }
 
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+@media (min-width: 750px) {
+  .open-slide {
+    display: none;
+  }
 }
 
-/* Style the <hr> element */
-hr {
-  margin: auto;
-  width: 40%;
-}
-
-.soon {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+@media (min-width: 568px) {
+  /*.open-slide{display:none}*/
 }
