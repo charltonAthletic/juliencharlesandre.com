@@ -51,6 +51,11 @@ body {
   font-size: 28px;
 }
 
+.gallery-text-display {
+  text-align: center;
+  font-size: 28px;
+}
+
 .larger-text {
   font-size: 34px;
 }
