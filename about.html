@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="styles2.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <title>ABOUT</title>
 </head>
+
 <body>
     <nav class="navbar">
         <span class="open-slide">
@@ -23,8 +26,8 @@
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="press.html">PRESS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
             <li><a href="https://www.instagram.com/studio_charles_andre/?hl=en" target="_blank">INSTAGRAM</a></li>
         </ul>
     </nav>
@@ -33,60 +36,100 @@
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT</a>
         <a href="gallery.html">GALLERY</a>
-        <a href="blog.html">BLOG</a>
-        <a href="#">CONTACT</a>
+        <a href="press.html">PRESS</a>
+        <a href="contact.html">CONTACT</a>
         <a href="https://www.instagram.com/studio_charles_andre/?hl=en" target="_blank">INSTAGRAM</a>
     </div>
-    <div id="main">
-        <!--<h1>Responsive Side Menu</h1>-->
-    </div>
-    <div class="about-text-display">
-        <br>
-        <span class="larger-text"><b>About Julien Charles André</b></span>
-        <br>
+    <header class="main-header">
+        <h1><span>About</span><span style="color: #FFF"> Julien Charles</span> <span style="color: #EF4135"> André</h1>
+        </span>
         <p>
             Julien Charles André was born in Nice, France in 1980, to a family with a long history
-            of architectural design and <i>craftsmanship</i>. His great grandfather, A. Boutillier, was a
-            master of printing with an atelier producing travel trunk labels for the most exclusive
-            luxury hotels in Paris in the early 20th century.
+            of architectural design and <i>craftsmanship</i>.
         </p>
-        <p>
-            Drawing inspiration from his great
-            grand-father, Julien developed a strong interest in art and design, in particular, with
-            colours, shapes and print-making. He began collecting <i>antique engravings</i> from five years ago, and started
-            experimenting colour variations and mixing with other media, mostly paper and
-            goldleaf, to create collages on the side of his job as a luxury retail stores’ visual
-            merchandiser.
-        <p>
-            In 2016, he went on an inspirational trip to Tuscany, Italy at Villa Lena
-            Art Foundation, where he created his first series with a Greek Divinity Theme. After
-            returning to London, he started exhibiting works in hotels and restaurants in between
-            London, Paris and Aix-en-Provence – where he grew up. More recently, he has
-            developed two new themes: <i>Architecture and Animal Kingdom</i>. He was also
-            commissioned by his collectors and interior designers for various site specific works
-            as well as bespoke framing for the art.
-        </p>
-        <p>
-            Without any formal art training, he creates the compositions based on how he
-            experiences and interacts with objects and themes, and experiments around how to
-            represent <i>classical art</i> forms in a contemporary setting. His works somewhat sit
-            between neo-classical, pop-art and decorative items for interior design without clear
-            boundaries.
-        </p>
-        <p>
-            His instantly recognisable style projects his belief that modern art
-            shouldn’t have to be complicated or resulting in distance itself from the audience. He
-            developed his own technique of creating 3D light-box effects through layering paper
-            with striking colour reflection in goadleaf ‘shadows’. He approaches antiquities and
-            ancient art with his modern and relaxed attitude. He strongly believes that it is
-            possible to achieve strong <i>artistic vision</i> with decorative purposes in mind at the
-            same time. Each piece is uniquely created by the artist in its own universe of
-            emotions, atmosphere and surreal settings, closely connected to experience and
-            connections he has about the subjects.
-        </p>
-    </div>
+    </header>
+    <main class="container">
+        <section class="card">
+            <img src="/gallery-images/2.jpg" alt="Julien Charles André with some his recent artwork" />
+            <div>
+                <h3><i>Histoire</i></h3>
+                <p>
+                    His great grandfather, A. Boutillier, was a
+                    master of printing with an atelier producing travel trunk labels for the most exclusive
+                    luxury hotels in Paris in the early 20th century.
+                </p>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-left">
+            <img src="/gallery-images/18.jpg" alt="Julien Charles André with some his recent artwork" />
+            <div>
+                <h3><i>Inspiration</i></h3>
+                <p>
+                    Drawing inspiration from his great
+                    grand-father, Julien developed a strong interest in art and design, in particular, with
+                    colours, shapes and print-making. He began collecting <i>antique engravings</i> from five years ago,
+                    and started
+                    experimenting colour variations and mixing with other media, mostly paper and
+                    goldleaf, to create collages on the side of his job as a luxury retail stores’ visual
+                    merchandiser.
+                    <p>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-right">
+            <img src="/gallery-images/19.jpg"
+                alt="Some of Julien Charles André's first 'Greek Divinity Theme' pieces of artwork" />
+            <div>
+                <h3><b>L'Italie</b></h3>
+                <p>
+                    In 2016, he went on an inspirational trip to Tuscany, Italy at Villa Lena
+                    Art Foundation, where he created his first series with a Greek Divinity Theme. After
+                    returning to London, he started exhibiting works in hotels and restaurants in between
+                    London, Paris and Aix-en-Provence – where he grew up. More recently, he has
+                    developed two new themes: <i>Architecture and Animal Kingdom</i>. He was also
+                    commissioned by his collectors and interior designers for various site specific works
+                    as well as bespoke framing for the art.
+                </p>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-left">
+            <img src="/gallery-images/58.jpeg" alt="Julien Charles André photograph" />
+            <div>
+                <h3><b>Création</b></h3>
+                <p>
+                    Without any formal art training, he creates the compositions based on how he
+                    experiences and interacts with objects and themes, and experiments around how to
+                    represent <i>classical art</i> forms in a contemporary setting. His works somewhat sit
+                    between neo-classical, pop-art and decorative items for interior design without clear
+                    boundaries.
+                </p>
+            </div>
+        </section>
+        <section class="card" data-aos="fade-right">
+            <img src="/gallery-images/36.jpg" alt="Julien Charles André's art work" />
+            <div>
+                <h3>Le style</h3>
+                <p>
+                    His instantly recognisable style projects his belief that modern art
+                    shouldn’t have to be complicated or resulting in distance itself from the audience. He
+                    developed his own technique of creating 3D light-box effects through layering paper
+                    with striking colour reflection in goadleaf ‘shadows’. He approaches antiquities and
+                    ancient art with his modern and relaxed attitude. He strongly believes that it is
+                    possible to achieve strong <i>artistic vision</i> with decorative purposes in mind at the
+                    same time. Each piece is uniquely created by the artist in its own universe of
+                    emotions, atmosphere and surreal settings, closely connected to experience and
+                    connections he has about the subjects.
+                </p>
+            </div>
+        </section>
+    </main>
 
     <script>
+        AOS.init({
+            offset: 400, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000 // values from 0 to 3000, with step 50ms 
+        });
+
         function openSlideMenu() {
             document.getElementById('side-menu').style.width = '250px';
             document.getElementById('main').style.marginLeft = '250px';
@@ -96,7 +139,11 @@
             document.getElementById('side-menu').style.width = '0';
             document.getElementById('main').style.marginLeft = '0';
         }
+
+
     </script>
+
+
 
 </body>
 

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
 }
 
 .wrapper{
@@ -44,7 +44,7 @@ body {
   margin-bottom: 5px;
 }
 
-.about-text-display, .blog-text-display {
+.about-text-display, .press-text-display {
   text-align: center; 
   padding-left: 10%;
   padding-right: 10%;
@@ -168,7 +168,7 @@ body {
 }
 
 .navbar {
-  background-color: #fff;
+  background-color: #FFF;
   overflow: hidden;
   height: 100px;
 }
@@ -189,7 +189,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #fff;
+  background-color: #FFF;
   color: #000;
 }
 
@@ -228,13 +228,13 @@ body {
   margin-left: 50px;
 }
 
-@media (max-width: 568px) {
+@media (max-width: 850px) {
   .navbar-nav {
     display: none;
   }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 850px) {
   .open-slide {
     display: none;
   }
