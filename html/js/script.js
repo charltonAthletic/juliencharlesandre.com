@@ -182,11 +182,11 @@ $(document).ready(function($) {
 	/*	Contact Map
 	/* ---------------------------------------------------------------------- */
 	try {
-		var fenway = [37.7940035,-122.2463581]; //Change a map coordinate here!
-		var markerPosition = [37.7940035,-122.2463581]; //Change a map marker here!
+		var fenway = [51.488343, -0.194266]; //Change a map coordinate here!
+		var markerPosition = [51.488343, -0.194266]; //Change a map marker here!
 		$('#map').gmap3({
 				center: fenway,
-				zoom: 12,
+				zoom: 15,
 				scrollwheel: false,
 				mapTypeId : google.maps.MapTypeId.ROADMAP
 			})
