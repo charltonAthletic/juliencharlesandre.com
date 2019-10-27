@@ -99,7 +99,7 @@
   
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 200px) {
   .heroImg img {
     box-sizing: border-box;
     position: fixed;
