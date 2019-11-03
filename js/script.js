@@ -181,6 +181,7 @@ $(document).ready(function($) {
 	/* ---------------------------------------------------------------------- */
 	/*	Contact Map
 	/* ---------------------------------------------------------------------- */
+	/*
 	try {
 		var fenway = [51.488343, -0.194266]; //Change a map coordinate here!
 		var markerPosition = [51.488343, -0.194266]; //Change a map marker here!
@@ -197,6 +198,7 @@ $(document).ready(function($) {
 	} catch(error) {
 
 	}
+	*/
 
 	/* ---------------------------------------------------------------------- */
 	/*	Shop galery image replacement
