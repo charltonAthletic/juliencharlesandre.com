@@ -2,6 +2,7 @@
 
 
 <html lang="en" class="no-js">
+
 <head>
 	<title>Daxon</title>
 
@@ -9,11 +10,12 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+
 	<link rel="stylesheet" href="css/daxon-assets.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
+
 <body>
 
 	<!-- Container -->
@@ -139,10 +141,32 @@
 
 			<!-- contact-form-section 
 				================================================== -->
+			<form name="contact" method="POST" data-netlify="true">
+				<p>
+					<label>Your Name: <input type="text" name="name" /></label>
+				</p>
+				<p>
+					<label>Your Email: <input type="email" name="email" /></label>
+				</p>
+				<p>
+					<label>Your Role: <select name="role[]" multiple>
+							<option value="leader">Leader</option>
+							<option value="follower">Follower</option>
+						</select></label>
+				</p>
+				<p>
+					<label>Message: <textarea name="message"></textarea></label>
+				</p>
+				<p>
+					<button type="submit">Send</button>
+				</p>
+				<div>data-netlify-recaptcha="true"</div>
+			</form>
+
 			<section class="contact-form-section">
 				<div class="container-fluid">
 					<div class="contact-form-box">
-						<form id="contact-form" action="POST" data-netlify="true">
+						<form id="contact-form" method="POST" data-netlify="true">
 							<h2>Get In Touch With Us</h2>
 							<p>Say Hello! Don’t be shy.</p>
 							<div class="row">
@@ -153,7 +177,7 @@
 									<input name="mail" id="mail" type="text" placeholder="Email*">
 								</div>
 							</div>
-							<input name="subject" id="subject" type="text" placeholder="Subject">	
+							<input name="subject" id="subject" type="text" placeholder="Subject">
 							<textarea name="comment" id="comment" placeholder="Message*"></textarea>
 							<button type="submit" id="submit_contact">
 								<i class="la la-paper-plane"></i>Send
@@ -226,7 +250,7 @@
 			<div class="subscribe-widget side-widget">
 				<h2>Subscribe to newsletter</h2>
 				<form class="subscribe-form">
-					<input type="text" name="email-subscribe" id="email-subscribe" placeholder="your email address"/>
+					<input type="text" name="email-subscribe" id="email-subscribe" placeholder="your email address" />
 					<button type="submit"><i class="la la-arrow-circle-right"></i></button>
 				</form>
 			</div>
@@ -250,7 +274,7 @@
 					<li>
 						<i class="la la-map-marker"></i>
 						<p>
-							198  West 21th Street, Suite 721 <br> New York, NY 10010
+							198 West 21th Street, Suite 721 <br> New York, NY 10010
 						</p>
 					</li>
 				</ul>
@@ -272,9 +296,10 @@
 
 	<script src="js/daxon-plugins.min.js"></script>
 	<script src="js/jquery.countTo.js"></script>
-    
-	
+
+
 	<script src="js/script.js"></script>
 
 </body>
+
 </html>
