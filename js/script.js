@@ -414,6 +414,7 @@ $(document).ready(function($) {
 	/*	Contact Form
 	/* ---------------------------------------------------------------------- */
 
+	/*
 	var submitContact = $('#submit_contact'),
 		message = $('#msg');
 
@@ -438,7 +439,7 @@ $(document).ready(function($) {
 				}
 			}
 		});
-	});
+	}); */
 	
 	/* ---------------------------------------------------------------------- */
 	/*	works carousel

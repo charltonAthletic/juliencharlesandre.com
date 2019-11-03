@@ -171,18 +171,18 @@
 							<p>Say Hello! Don’t be shy.</p>
 							<div class="row">
 								<div class="col-sm-6">
-									<input name="name" id="name" type="text" placeholder="Name*">
+									<input name="name" id="name" type="text" placeholder="Name">
 								</div>
 								<div class="col-sm-6">
-									<input name="mail" id="mail" type="text" placeholder="Email*">
+									<input name="mail" id="mail" type="email" placeholder="Email">
 								</div>
 							</div>
 							<input name="subject" id="subject" type="text" placeholder="Subject">
-							<textarea name="comment" id="comment" placeholder="Message*"></textarea>
+							<textarea name="comment" id="comment" placeholder="Message"></textarea>
+							<div data-netlify-recaptcha="true"></div>
 							<button type="submit" id="submit_contact">
 								<i class="la la-paper-plane"></i>Send
 							</button>
-							<div>data-netlify-recaptcha="true"</div>
 							<div id="msg"></div>
 						</form>
 						<div class="image-holder">
