@@ -1775,6 +1775,7 @@ section.contact-form-section {
         font-weight: 300;
         margin-bottom: 30px; }
       section.contact-form-section .contact-form-box #contact-form input[type="text"],
+      section.contact-form-section .contact-form-box #contact-form .recaptcha, 
       section.contact-form-section .contact-form-box #contact-form textarea {
         display: block;
         width: 100%;
