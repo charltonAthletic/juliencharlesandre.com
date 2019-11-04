@@ -141,28 +141,7 @@
 
 			<!-- contact-form-section 
 				================================================== -->
-			<form name="contact" method="POST" data-netlify="true">
-				<p>
-					<label>Your Name: <input type="text" name="name" /></label>
-				</p>
-				<p>
-					<label>Your Email: <input type="email" name="email" /></label>
-				</p>
-				<p>
-					<label>Your Role: <select name="role[]" multiple>
-							<option value="leader">Leader</option>
-							<option value="follower">Follower</option>
-						</select></label>
-				</p>
-				<p>
-					<label>Message: <textarea name="message"></textarea></label>
-				</p>
-				<p>
-					<button type="submit">Send</button>
-				</p>
-				<div data-netlify-recaptcha="true"></div>
-			</form>
-
+		
 			<section class="contact-form-section">
 				<div class="container-fluid">
 					<div class="contact-form-box">
@@ -174,19 +153,19 @@
 									<input name="name" id="name" type="text" placeholder="Name">
 								</div>
 								<div class="col-sm-6">
-									<input name="mail" id="mail" type="email" placeholder="Email">
+									<input name="mail" id="mail" type="text" placeholder="Email">
 								</div>
 							</div>
 							<input name="subject" id="subject" type="text" placeholder="Subject">
 							<textarea name="comment" id="comment" placeholder="Message"></textarea>
-							<div data-netlify-recaptcha="true"></div>
+							<div data-netlify-recaptcha="true"></div><br/>
 							<button type="submit" id="submit_contact">
 								<i class="la la-paper-plane"></i>Send
 							</button>
 							<div id="msg"></div>
 						</form>
 						<div class="image-holder">
-							<img src="upload/others/contact.jpg" alt="">
+							<img src="/images//greek9.jpg" alt="">
 						</div>
 					</div>
 				</div>
