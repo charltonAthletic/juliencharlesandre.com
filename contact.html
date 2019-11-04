@@ -115,12 +115,6 @@
 						</div>-->
 						<div class="col-sm-4">
 							<div class="contact-post">
-								<h2>EMAIL</h2>
-								<span>julien.leflot@gmail.com</span>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="contact-post">
 								<h2>MEET THE ARTIST</h2>
 								<p>Tuesday to Saturday: 17:00 to 18:30</p>
 								<span>FRAME SMITH<br /> 324 OLD BROMPTON ROAD<br />EARL'S COURT<br>LONDON<br /> SW5
@@ -134,35 +128,34 @@
 
 			<!-- contact-form-section 
                 ================================================== -->
-			<!--    
 			<section class="contact-form-section">
 				<div class="container-fluid">
 					<div class="contact-form-box">
-						<form id="contact-form">
-							<h2>Get In Touch With Us</h2>
-							<p>Say Hello! Don’t be shy.</p>
+						<form id="contact-form" method="POST" data-netlify="true">
+							<h2>Contact Julien</h2>
+							<p></p>
 							<div class="row">
 								<div class="col-sm-6">
-									<input name="name" id="name" type="text" placeholder="Name*">
+									<input name="name" id="name" type="text" placeholder="Name">
 								</div>
 								<div class="col-sm-6">
-									<input name="mail" id="mail" type="text" placeholder="Email*">
+									<input name="mail" id="mail" type="text" placeholder="Email">
 								</div>
 							</div>
-							<input name="subject" id="subject" type="text" placeholder="Subject">	
-							<textarea name="comment" id="comment" placeholder="Message*"></textarea>
+							<input name="subject" id="subject" type="text" placeholder="Subject">
+							<textarea name="comment" id="comment" placeholder="Message"></textarea>
+							<div data-netlify-recaptcha="true"></div><br/>
 							<button type="submit" id="submit_contact">
 								<i class="la la-paper-plane"></i>Send
 							</button>
 							<div id="msg"></div>
 						</form>
 						<div class="image-holder">
-							<img src="upload/others/contact.jpg" alt="">
+							<img src="/images//greek9.jpg" alt="">
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- End contact-form section -->
 
 			<!-- map 
 				================================================== -->
